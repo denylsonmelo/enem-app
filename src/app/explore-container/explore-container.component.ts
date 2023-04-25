@@ -7,5 +7,9 @@ import { Component, Input } from '@angular/core';
   standalone: true,
 })
 export class ExploreContainerComponent {
-  @Input() name?: string;
+  @Input() name?: string = 'valor interno';
+  //@Input('nomeParametro') nome?: string = 'valor interno';
+
+  variavelInterna = true;
+  metodo() {}
 }
