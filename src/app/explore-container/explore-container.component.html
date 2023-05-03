@@ -1,15 +1,38 @@
 <div id="container">
-  <strong> name </strong>
-  <strong (click)="metodo()">{{ name }}</strong>
+  <!-- <p>{{ variavelInterna }}</p> -->
+  <!-- <strong (click)="metodo(campoParaCapturar.value)">{{ name }}</strong>
+  <br /> -->
 
-  <p>
-    modificanco aqui dentro do componente explore
-    <a
-      [hidden]="variavelInterna"
+  <!-- <input type="text" [value]="variavelDupla" #campoParaCapturar /> -->
+
+  <!-- {{ variavelDupla }} -->
+
+  <!-- <p *ngIf="variavelInterna; then casoVerdade; else casoFalso">
+    mostrando tag p -->
+  <!-- if verdadeiro -->
+  <!-- <a
       target="_blank"
       rel="noopener noreferrer"
       href="https://ionicframework.com/docs/components"
       >UI Components</a
     >
   </p>
+
+  <ng-template #casoVerdade>
+    <div>usuario logado</div>
+  </ng-template>
+
+  <ng-template #casoFalso>
+    <div>usuario deslogado</div>
+  </ng-template> -->
+
+  <br />
+  {{ variavelArray }}
+
+  <br />
+
+  <app-detalhamento-aluno
+    [dado]="aluno"
+    *ngFor="let aluno of variavelArray"
+  ></app-detalhamento-aluno>
 </div>

@@ -1,0 +1,31 @@
+.aluno-detalhe {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: red;
+}
+
+.aluno-img {
+  width: 100px;
+  overflow: hidden;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+}
+.aluno-info {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.aluno-info-detalhe {
+  text-transform: none;
+  font-weight: normal;
+}
+
+// @media (min-width: 480px) {
+//   :root {
+//     font-size: 16px;
+//     background: red;
+//   }
+// }

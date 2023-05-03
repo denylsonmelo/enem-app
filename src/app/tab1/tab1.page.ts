@@ -10,5 +10,7 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
   imports: [IonicModule, ExploreContainerComponent],
 })
 export class Tab1Page {
+  paginaMassa = 'Poxa, essa pagina eh massa mesmo';
+
   constructor() {}
 }
