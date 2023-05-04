@@ -25,3 +25,30 @@
 #container a {
   text-decoration: none;
 }
+.botao-slide {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  border-radius: 1rem;
+  border: white 0.125rem solid;
+  box-shadow: white 0 0.25rem 0.25rem 0;
+}
+
+.ponto-slide {
+  margin: 0.25rem;
+}
+
+.ativo {
+  color: red;
+  background: white;
+}
+
+app-detalhamento-aluno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}

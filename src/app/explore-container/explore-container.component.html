@@ -26,13 +26,21 @@
     <div>usuario deslogado</div>
   </ng-template> -->
 
-  <br />
+  <!-- <br />
   {{ variavelArray }}
 
-  <br />
+  <br /> -->
 
-  <app-detalhamento-aluno
-    [dado]="aluno"
-    *ngFor="let aluno of variavelArray"
-  ></app-detalhamento-aluno>
+  <span
+    *ngFor="let aluno of variavelArray; let index = index"
+    class="ponto-slide"
+    [class]="index === indice ? 'ativo' : 'nada'"
+  >
+    ㉥
+  </span>
+
+  <app-detalhamento-aluno [dado]="alunoSelecionado"></app-detalhamento-aluno>
+
+  <span class="botao-slide" (click)="anterior()">←</span>
+  <span class="botao-slide" (click)="proximo()">→</span>
 </div>
