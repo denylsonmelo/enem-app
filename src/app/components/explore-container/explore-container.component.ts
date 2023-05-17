@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { DetalhamentoAlunoComponent } from '../components/detalhamento-aluno/detalhamento-aluno.component';
-import { Aluno } from '../models/aluno';
+import { Aluno } from '../../models/aluno';
+import { DetalhamentoAlunoComponent } from '../detalhamento-aluno/detalhamento-aluno.component';
 
 @Component({
   selector: 'app-explore-container',

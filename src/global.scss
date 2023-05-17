@@ -16,7 +16,7 @@
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
-@import '@ionic/angular/css/display.css';
+@import "@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
@@ -24,3 +24,50 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+// nosso
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+:root {
+  // --pb-01: #EAEAEA;
+  --pb-01: #ffffff;
+  --pb-02: #4b4b4b;
+
+  --cinza-01: #e5e5e5;
+  --cinza-02: #dddddd;
+  --cinza-03: #afafaf;
+
+  --azul-01: #1cb0f6;
+  --azul-02: #168cc4;
+
+  --font-family-app: "Roboto", sans-serif;
+  --font-weight-01: 400;
+  --font-weight-02: 700;
+  --font-weight-03: 900;
+}
+
+.span-negrito {
+  font-family: var(--font-family-app);
+  font-weight: var(--font-weight-02);
+}
+
+.icones-grande {
+}
+
+.icones-pequeno {
+  --font-size: 18px;
+}
+ion-title {
+  color: var(--cinza-03);
+  // color: #000;
+}
+ion-button {
+  color: var(--azul-01);
+}
+ion-toolbar {
+  --background: var(--pb-01);
+
+  --border-color: var(--cinza-03);
+  --border-width: 0 0 2px 0;
+  --border-style: solid;
+}
