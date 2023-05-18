@@ -82,3 +82,15 @@ ion-toolbar {
 ion-content {
   --background: var(--pb-01);
 }
+
+ion-segment-button {
+  --color: var(--cinza-03);
+  --color-checked: var(--azul-01);
+  --indicator-height: 4px;
+  --border-width: 0 0 0.2rem 0;
+  --border-style: solid;
+}
+
+ion-item {
+  --background: var(--verde-03);
+}

@@ -22,12 +22,25 @@
     <span class="span-negrito">{{usuario.nome}}</span>
   </div>
 
-  <ion-segment value="default">
+  <!-- (ionChange)="trocaAreaSelecionada($event)" -->
+  <ion-segment [(ngModel)]="areaSelecionada">
     <ion-segment-button value="conquistas">
-      <ion-label>Conquistas</ion-label>
+      <ion-label class="span-negrito">Conquistas</ion-label>
     </ion-segment-button>
+
     <ion-segment-button value="amigos">
-      <ion-label>Amigos</ion-label>
+      <ion-label class="span-negrito">Amigos</ion-label>
     </ion-segment-button>
   </ion-segment>
+
+  <div [ngSwitch]="areaSelecionada">
+    <ion-list *ngSwitchCase="'conquistas'" inset="true" lines="none">
+      <ion-item *ngFor="let questzinha of usuario.quests">
+        <ion-label>{{ questzinha.nome }}</ion-label>
+        <ion-label>{{ questzinha.objetivo }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'amigos'"> texto 02 </ion-list>
+  </div>
 </ion-content>
