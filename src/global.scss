@@ -40,6 +40,10 @@
   --azul-01: #1cb0f6;
   --azul-02: #168cc4;
 
+  --verde-01: #79d635;
+  --verde-02: #78c800;
+  --verde-03: #65a605;
+
   --font-family-app: "Roboto", sans-serif;
   --font-weight-01: 400;
   --font-weight-02: 700;
@@ -49,6 +53,7 @@
 .span-negrito {
   font-family: var(--font-family-app);
   font-weight: var(--font-weight-02);
+  font-size: 18px;
 }
 
 .icones-grande {
@@ -57,17 +62,23 @@
 .icones-pequeno {
   --font-size: 18px;
 }
+
 ion-title {
   color: var(--cinza-03);
-  // color: #000;
 }
+
 ion-button {
   color: var(--azul-01);
 }
+
 ion-toolbar {
   --background: var(--pb-01);
 
   --border-color: var(--cinza-03);
-  --border-width: 0 0 2px 0;
+  --border-width: 0 0 4px 0;
   --border-style: solid;
+}
+
+ion-content {
+  --background: var(--pb-01);
 }

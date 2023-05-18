@@ -1,0 +1,17 @@
+.perfil-usuario {
+  width: 9rem;
+
+  margin: 1rem auto;
+  place-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.perfil-usuario img {
+  width: 5rem;
+}
+
+.perfil-usuario span {
+  color: var(--pb-02);
+}
