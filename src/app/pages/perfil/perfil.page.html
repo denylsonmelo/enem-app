@@ -33,14 +33,24 @@
     </ion-segment-button>
   </ion-segment>
 
-  <div [ngSwitch]="areaSelecionada">
-    <ion-list *ngSwitchCase="'conquistas'" inset="true" lines="none">
+  <!-- <div [ngSwitch]="areaSelecionada"> -->
+  <!-- <ion-list *ngSwitchCase="'conquistas'" inset="true" lines="none">
       <ion-item *ngFor="let questzinha of usuario.quests">
         <ion-label>{{ questzinha.nome }}</ion-label>
         <ion-label>{{ questzinha.objetivo }}</ion-label>
+        <ion-label>{{ questzinha.cor }}</ion-label>
+        <ion-label>{{ questzinha.inicial }}</ion-label>
+        <ion-label>{{ questzinha.final }}</ion-label>
+        <ion-label>{{ questzinha.finalizado }}</ion-label>
+        <ion-label>{{ questzinha.imagemUrl }}</ion-label>
       </ion-item>
     </ion-list>
 
-    <ion-list *ngSwitchCase="'amigos'"> texto 02 </ion-list>
-  </div>
+    <ion-list *ngSwitchCase="'amigos'">
+      <ion-item *ngFor="let amigo of usuario.amigos">
+        <ion-label>{{ amigo.nome }}</ion-label>
+        <ion-label>{{ amigo.imagemUrl }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </div> -->
 </ion-content>
